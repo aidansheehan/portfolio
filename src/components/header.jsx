@@ -1,28 +1,35 @@
+import { useState } from 'react';
 
 /**
  * Header component
  */
 const HeaderComponent = () => {
 
-    return (
-        <header className='grid grid-cols-2 h-8 justify-center align-middle' >
+    //Whether menu expanded
+    const [ menuExpanded, setMenuExpanded ] = useState(false);
 
-            <div>
+    //Toggle menu expanded
+    const toggleMenuExpanded = () => setMenuExpanded(!menuExpanded);
+
+    return (
+        <header className='grid grid-cols-2 h-12 items-center' >
+
+            <div className='pl-5'>
                 LOGO
             </div>
 
-            <section className='flex lg:hidden justify-end' >
+            <section className='flex md:hidden justify-end' >
 
-                <div className='space-y-2 pr-5' >
+                <button className='space-y-2 pr-5' onClick={toggleMenuExpanded} >
                     <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                     <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                     <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                </div>
+                </button>
 
-                <div className='absolute top-8' >
+                <div className={`absolute top-12 w-full z-10 h-full bg-white ${menuExpanded ? 'block' : 'hidden'}`} >
                     <ul className="flex flex-col items-center justify-between" >
                         <li>
-                            <a href='#'>About</a>
+                            <a href='#about'>About</a>
                         </li>
                         <li>
                             <a href='#'>Experience</a>
@@ -37,7 +44,7 @@ const HeaderComponent = () => {
             </section>
 
 
-            <div className='flex justify-end gap-3 pr-5 hidden' >
+            <div className='justify-end gap-3 pr-5 hidden md:flex' >
                 <a href='#'>
                     About
                 </a>

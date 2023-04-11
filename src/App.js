@@ -1,14 +1,15 @@
 import './App.css';
+import AboutComponent from './components/about';
 import HeaderComponent from './components/header';
+import IntroductionComponent from './components/introduction';
 
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
 
-      <h1 className='text-3x1 font-bold underline'>
-        Hello World!
-      </h1>
+      <HeaderComponent />
+      <IntroductionComponent />
+      <AboutComponent />
 
     </div>
   );
