@@ -6,7 +6,7 @@ import CTAComponent from './cta';
 const IntroductionComponent = () => {
 
     return (
-        <div className='h-screen bg-red-500'>
+         <div className='h-screen bg-red-500 md:h-[700px]'>
             <section className='px-5 h-full flex flex-col justify-center content-center'>
                 <p className='text-xl'>Hello, I'm</p>
                 <h2 className='text-5xl' >Aidan Sheehan</h2>

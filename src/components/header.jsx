@@ -12,7 +12,7 @@ const HeaderComponent = () => {
     const toggleMenuExpanded = () => setMenuExpanded(!menuExpanded);
 
     return (
-        <header className='grid grid-cols-2 h-12 items-center' >
+        <header className='grid grid-cols-2 h-12 items-center sticky top-0 bg-white' >
 
             <div className='pl-5'>
                 LOGO
@@ -26,10 +26,10 @@ const HeaderComponent = () => {
                     <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                 </button>
 
-                <div className={`absolute top-12 w-full z-10 h-full bg-white ${menuExpanded ? 'block' : 'hidden'}`} >
+                <div className={`absolute top-12 w-full z-10 h-screen bg-white ${menuExpanded ? 'block' : 'hidden'}`} >
                     <ul className="flex flex-col items-center justify-between" >
                         <li>
-                            <a href='#about'>About</a>
+                            <a onClick={toggleMenuExpanded} href='#about'>About</a>
                         </li>
                         <li>
                             <a href='#'>Experience</a>
