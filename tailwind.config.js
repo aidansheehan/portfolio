@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      playfairDisplay: ['PlayfairDisplay', 'serif'],
+      sourceSansPro: ['SourceSansPro', 'sans-serif']
+    }
   },
   plugins: [],
 }
