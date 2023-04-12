@@ -1,3 +1,4 @@
+import TitleComponent from "../title";
 import AboutSectionComponent from "./about-section";
 
 /**
@@ -14,9 +15,7 @@ const AboutComponent = () => {
     return (
         <div id='about' className='px-5'>
 
-            <div className='pt-12 pb-6 text-4xl'>
-                <h2>About</h2>
-            </div>
+            <TitleComponent text='About' />
 
             {
                 ABOUT_TEXTS.map((t_, i_) => (
