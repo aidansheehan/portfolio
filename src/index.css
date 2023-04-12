@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'SourceSansPro';
-  src: url('./assets/fonts/SourceSansPro-Light.ttf');
-  font-weight: 300;
+  src: url('./assets/fonts/SourceSansPro-Regular.ttf');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -23,6 +23,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
 }
 
 code {
