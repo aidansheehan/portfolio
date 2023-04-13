@@ -13,7 +13,7 @@ const AboutComponent = () => {
     ];
 
     return (
-        <div id='about' className='px-5'>
+        <div id='about' className='CONTENT'>
 
             <TitleComponent text='About' />
 

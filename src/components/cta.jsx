@@ -4,7 +4,7 @@
 const CTAComponent = () => {
 
     return (
-        <button className='border border-[#A18276] text-[#A18276] h-20 mt-8 uppercase' >
+        <button className='border border-accent text-accent h-20 my-6 uppercase rounded-md hover:bg-accent hover:text-secondary' >
             Let's Chat
         </button>
     )

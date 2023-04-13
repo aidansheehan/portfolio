@@ -5,7 +5,7 @@ import IntroductionComponent from './components/introduction';
 
 function App() {
   return (
-    <div className="App font-sourceSansPro text-[#050A24]">
+    <div className="App font-sourceSansPro">
 
       <HeaderComponent />
       <IntroductionComponent />

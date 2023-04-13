@@ -7,7 +7,7 @@ const AboutSectionComponent = (props) => {
     const { text } = props
 
     return (
-        <p className='leading-loose mb-4 text-[#050A24]'>
+        <p className='leading-loose mb-4 text-txtPrimary'>
             {text}
         </p>
     )
