@@ -6,7 +6,7 @@ const TitleComponent = (props) => {
     const { text } = props
 
     return (
-        <div className='pt-12 pb-6' >
+        <div className='pt-12 pb-4' >
             <h2 className="text-3xl text-accent font-playfairDisplay uppercase" >{text}</h2>
         </div>
     );

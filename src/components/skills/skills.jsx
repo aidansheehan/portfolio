@@ -23,7 +23,7 @@ const SkillsComponent = () => {
             color: '#E63462'
         },
         {
-            name: 'CSS/SCSS',
+            name: 'Redux',
             percentage: 85,
             color: '#748B75'
         },
@@ -43,25 +43,25 @@ const SkillsComponent = () => {
         <div className='CONTENT'>
             <TitleComponent text='skills & experience' />
 
-            <div className='flex flex-row gap-20 items-center' >
+            <div className='flex flex-col items-center md:flex-row' >
 
-                <div className='flex flex-col w-1/2'>
-                    {
-                        SKILLS_CONSTANT.map((s_, i_) => (
-                            <SkillBarComponent key={i_} name={s_.name} percentage={s_.percentage} color={s_.color} />
-                        ))
-                    }
+                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2'>
+                        {
+                            SKILLS_CONSTANT.map((s_, i_) => (
+                                <SkillBarComponent key={i_} name={s_.name} percentage={s_.percentage} color={s_.color} />
+                            ))
+                        }
+                    </div>
+
+                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2'>
+                        {
+                            EXPERIENCE_CONSTANT.map((e_, i_) => (
+                                <ExperienceComponent key={i_} role={e_.role} company={e_.company} dates={e_.dates} description={e_.description} />
+                            ))
+                        }
+                    </div>
+
                 </div>
-
-                <div className='flex flex-col w-1/2'>
-                    {
-                        EXPERIENCE_CONSTANT.map((e_, i_) => (
-                            <ExperienceComponent key={i_} role={e_.role} company={e_.company} dates={e_.dates} description={e_.description} />
-                        ))
-                    }
-                </div>
-
-            </div>
 
         </div>
     )
