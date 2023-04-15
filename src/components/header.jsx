@@ -32,7 +32,7 @@ const HeaderComponent = () => {
                             <a onClick={toggleMenuExpanded} href='#about'>About</a>
                         </li>
                         <li>
-                            <a href='#'>Experience</a>
+                            <a href='#'>Skills</a>
                         </li>
                         <li>
                             <a href='#'>Education</a>
@@ -53,7 +53,7 @@ const HeaderComponent = () => {
                 </a>
 
                 <a href='#'>
-                    Experience
+                    Skills
                 </a>
 
                 <a href='#'>
