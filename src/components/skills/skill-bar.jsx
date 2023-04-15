@@ -4,7 +4,6 @@
 const SkillBarComponent = (props) => {
 
     const { name, percentage, color } = props;
-    console.log(name, percentage, color)
 
     return (
         <div className='w-full my-2'>

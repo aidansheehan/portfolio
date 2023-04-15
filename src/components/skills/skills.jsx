@@ -1,6 +1,6 @@
-import TitleComponent from "../title"
-import ExperienceComponent from "./experience";
-import SkillBarComponent from "./skill-bar";
+import TitleComponent from '../title'
+import ExperienceComponent from './experience'
+import SkillBarComponent from './skill-bar'
 
 /**
  * Component to display skills & experience
