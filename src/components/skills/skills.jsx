@@ -43,9 +43,9 @@ const SkillsComponent = () => {
         <div className='CONTENT'>
             <TitleComponent text='skills & experience' />
 
-            <div className='flex flex-col items-center md:flex-row' >
+            <div className='flex flex-col items-center md:flex-row-reverse' >
 
-                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2'>
+                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2 md:pb-0'>
                         {
                             SKILLS_CONSTANT.map((s_, i_) => (
                                 <SkillBarComponent key={i_} name={s_.name} percentage={s_.percentage} color={s_.color} />
@@ -53,7 +53,7 @@ const SkillsComponent = () => {
                         }
                     </div>
 
-                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2'>
+                <div className='flex flex-col w-full px-6 pb-4 md:w-1/2 md:pb-0'>
                         {
                             EXPERIENCE_CONSTANT.map((e_, i_) => (
                                 <ExperienceComponent key={i_} role={e_.role} company={e_.company} dates={e_.dates} description={e_.description} />
